@@ -1,0 +1,289 @@
+/* Usamos este estilo para agregar la imagen de fondo que contendra la pagina */
+/* body{
+    background-image: url(../Img/Background.svg);
+
+}
+.contenedor{
+    display: flex;
+}
+.sidebar{
+   
+    width: 160px;
+    background-color: #00249c ;
+    border-end-end-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+li{
+    list-style-type: none;
+    margin-top: 40%;
+}
+.telefono{
+    display: block;
+    width: 50%;
+    
+    background-color: black;
+}
+.img{
+    background-color: aqua;
+}
+.informacion{
+   
+    width: 38%;
+    background-color: rgb(10, 10, 10); 
+}
+.globo{
+    color: #00249c;
+    font-size: 200%;
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    line-height: 1;
+    margin: 10px;
+    padding: 30px;
+    background-color: #40cee4c2;
+    border-radius: 40px;
+} */
+
+/* Estilo general de la página */
+body {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    background-image: url(../Img/Background.svg);
+
+  }
+  p{
+    color:  #A8A8A8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: justify;
+  }
+  h1{
+    color: #00249c;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .informacion img {
+    width: 180px; /* Ancho de la imagen */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  }
+  /* Estilo de la barra lateral */
+  .sidebar {
+
+    background-color: #00249C;
+    width: 160px;
+    height: 100vh; /* La barra lateral ocupa todo el alto de la pantalla */
+    border-top-right-radius: 20px; /* Radio de circunferencia para el borde de arriba del sidebar */
+    border-bottom-right-radius: 20px; /* Radio de circunferencia para el borde de abajo del sidebar */
+  }
+  
+  /* Estilo de los enlaces en la barra lateral */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40%;
+  }
+  
+  .sidebar li {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .imagenes{
+    margin: 3%;
+  }
+  .im1{
+    position: absolute;
+    top: 350px; /* Ajusta la posición vertical según tus necesidades */
+    left: 210px;
+    z-index: 2;
+    z-index: 1;
+  }
+  .im2{
+    position: absolute;
+    top: 355px; /* Ajusta la posición vertical según tus necesidades */
+    left: 210px;
+    z-index: 2;
+
+  }
+  /* Estilo del contenido principal */
+  .contenedor {
+    display: flex;
+    align-items: center;
+  }
+  .informacion{
+    flex: 1; 
+    height: 400px; /* Altura específica del contenedor */
+    overflow: auto; /* Agregar un scroll vertical cuando el contenido exceda la altura del contenedor */
+    padding: 10px;
+  }
+  div::-webkit-scrollbar{
+    display: none; /*Oculta la barra de scroll*/
+  }
+  .animacion{
+    width: 10%;
+  }
+  .telefono{
+    flex: 1; 
+    width: 100%; /* El div ocupa el ancho completo del contenedor padre */
+    max-width: 600px; /* Establecemos un ancho máximo para evitar que el div crezca demasiado en pantallas grandes */
+    margin: 0 auto; /* Centramos el div horizontalmente en su contenedor padre */
+    padding: 20px;
+  }
+  .cel{
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor padre */
+    height:auto;
+
+  }
+  h2{
+    color: #00249c;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    height: 15%;
+    width: 45%;
+    padding: 20px;
+    background-color: #40cee4c2;
+    border-radius: 40px;
+    
+}
+.carga1{
+  margin-left: 80%;
+  margin-bottom: 60%;
+  background-color: #40cee4c2 ;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+ 
+}
+.carga2{
+  margin-left: 60%;
+  margin-bottom: 10%;
+  background-color: #40cee4c2 ;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+ 
+}
+.carga3{
+  margin-left: 60%;
+  margin-bottom: 10%;
+  background-color: #40cee4c2 ;
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+ 
+}
+.carga4{
+  margin-left: 60%;
+  margin-bottom: 10%;
+  background-color: #40cee4c2 ;
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+ 
+}
+ .sidebar li ul{
+  display: none;
+  position: relative;
+  min-width: 640px;
+  background-color: #40CEE4;
+  border-top-right-radius: 20px; /* Radio de circunferencia para el borde de arriba del sidebar */
+  border-bottom-right-radius: 20px; 
+
+}  
+.sidebar li:hover > ul{
+ display: block;
+ 
+}
+.hamburguesa2{
+ align-items: center;
+ float: left;
+ top: 5px;
+
+}
+li {
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+li ul {
+  top: -100px;
+  color: aquamarine;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+.lista{
+  font-size: 20px;
+  color: white;
+  margin-left: 30%;
+}
+  
+  /* Estilos para hacer la pagina responsive */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%; /* La barra lateral ocupa todo el ancho disponible */
+      height: auto; /* La altura se ajustará automáticamente según el contenido */
+      padding-bottom: 0; /* Quitamos el espacio interno en dispositivos móviles */
+      border-radius: 0;
+      display: block;
+    }
+  
+    .sidebar ul {
+      display: flex; /* Mostramos los enlaces en una fila */
+      justify-content: space-between; /* Distribuye los elementos en la barra lateral con espacio entre ellos */
+      flex-wrap: wrap; /* Si no hay suficiente espacio, los enlaces se envolverán a una nueva línea */
+      display: block;
+    }
+  
+    .sidebar li {
+      flex: 1; /* Cada enlace ocupará un espacio igual */
+      padding: 10px;
+      display: block;
+    }
+    .informacion{
+      flex: 1; 
+      width: 100%; /* Altura específica del contenedor */
+      height: auto;
+      overflow: auto; /* Agregar un scroll vertical cuando el contenido exceda la altura del contenedor */
+      padding: 5px;
+      display: block;
+    }
+    h1{
+      color: #00249c;
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    h2{
+      font-size: 15px;
+      width: auto;
+      height: auto;
+    }
+    p{  
+      color:  #A8A8A8;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      text-align: justify;
+    }
+    .carga1{
+      display: none; /*Oculta el div*/
+    }
+    .carga2{
+      display: none; /*Oculta el div*/
+    }
+    .carga3{
+      display: none; /*Oculta el div*/
+    }
+    .carga4{
+      display: none; /*Oculta el div*/
+    }
+    .im1{
+      display: none; /*Oculta el div*/
+    }
+    .im2{
+      display: none; /*Oculta el div*/
+    }
+  }
